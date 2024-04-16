@@ -23,7 +23,7 @@ namespace GDMod
             PrefabManager.OnVanillaPrefabsAvailable += CustomArmor.CustomArmorPrefab;
             PrefabManager.OnVanillaPrefabsAvailable += Economy.EconomyPrefab;
             
-            Harmony harmonyLocal = Harmony;
+            var harmonyLocal = Harmony;
             if (harmonyLocal != null)
             {
                 harmonyLocal.PatchAll();
